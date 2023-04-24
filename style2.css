@@ -1,0 +1,15 @@
+.pembungkusJawaban{
+    display: flex;
+    background-color: aqua;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pembungkusJawaban .choice-prefix{
+    margin-right: 4px;
+}
+
+.choice-text{
+    width: 100%;
+}

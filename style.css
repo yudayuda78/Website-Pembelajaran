@@ -1,0 +1,784 @@
+@media screen /* css reset */ {
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+       v2.0 | 20110126
+       License: none (public domain)
+    */
+  
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+      display: block;
+    }
+    body {
+      line-height: 1;
+    }
+    ol,
+    ul {
+      list-style: none;
+    }
+    blockquote,
+    q {
+      quotes: none;
+    }
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+      content: "";
+      content: none;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+  @media screen /* Mula */ {
+    :root {
+      --font: "Poppins", sans-serif;
+      --font-bold: "Poppins", sans-serif;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  
+  @media screen /* header */ {
+    .wrapperjudul{
+      height: 100px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      place-content: center;
+    }
+    .wrapperjudul .judul{
+      width: 1000px;
+      height: 60px;
+      margin-left: 14em;
+    }
+
+    .wrapperjudul .judul .isijudul{
+      font-family: "Sora", sans-serif;
+      font-size: 35px;
+      font-weight: 900;
+    }
+
+    .wrapperheader {
+      height: 100px !important;
+      width: 100% !important;
+      display: flex !important;
+      justify-content: center !important;
+      justify-items: center !important;
+      align-items: center !important;
+      place-content: center ;
+    }
+  
+    .wrapperheader .salam {
+      width: 100px;
+      height: 60px;
+      margin-left: 6em;
+    }
+  
+    .salam h1 {
+      font-family: "Sora", sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      margin-left: -40px;
+
+    }
+  
+    .salam h1 span {
+      display: flex;
+      width: 200px;
+      font-family: "Sora", sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+      margin-left: -255px;
+    }
+  
+    .logout {
+      width: 80px;
+      height: 60px;
+      margin-left: 100px;
+    }
+
+    .logout a{
+      font-family: "Sora", sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      margin-left: 355px;
+      display: block;
+      color: red;
+    }
+
+
+  }
+  @media screen /* navbar */ {
+    i {
+      color: #000;
+      font-size: 32px;
+    }
+    .hamburger {
+      font-size: 30px;
+      padding: 5px;
+      margin: auto;
+      align-content: center;
+      justify-items: center;
+    }
+    #wrapper {
+      width: 100%;
+    }
+    .wrappernavbar {
+      width: 100px;
+      height: 100%;
+      display: flex;
+      background-color: #d4edfa;
+      position: fixed;
+      justify-content: center;
+      text-align: center;
+    }
+    /* .navbar {
+          width: 80%;
+          height: 41PX;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          justify-items: center;
+          flex-wrap: nowrap;
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          background-color: brown;
+      } */
+    .navbar ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      text-align: center;
+      /* background-color: #5AE0E0; */
+      padding: 1em 0;
+    }
+    .navbar ul p {
+      padding: 0.5em 0;
+      color: #000;
+      font-family: var(--font-bold);
+      font-weight: 600;
+    }
+  }
+  @media screen /* isi */ {
+    .isi {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+      margin: 1em 0px 1em 130px;
+      /* overflow: hidden; */
+      gap: 0 1em;
+      justify-items: center;
+    }
+    .wrapper {
+      display: grid;
+      border-radius: 20px;
+      width: 355px;
+      height: 154px;
+      margin: 10px;
+    }
+    .wrapper a {
+      position: relative;
+      color: #fff;
+      font-family: "Sora", sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .tulisan {
+      position: relative;
+      display: grid;
+      text-align: center;
+      top: 3em;
+      padding: 0 1em;
+    }
+    .gambar {
+      float: left;
+      padding: 1em 0 0 1em;
+    }
+  }
+  @media screen /* Warna tiap grid */ {
+    #wrapper-komdas /* kompetensi dasar */ {
+      background-color: #57b8eb;
+    }
+    #wrapper-petpeng /* petunjuk pengguna */ {
+      background-color: #7382bf;
+    }
+    #wrapper-materi2 /* materi2 */ {
+      background-color: #5ae0e0;
+    }
+    #wrapper-latsoal /* latsoal */ {
+      background-color: #f9af2a;
+    }
+    #wrapper-soaleva /* soal evaluasi */ {
+      background-color: #9b59b6;
+    }
+
+    #wrapper-hasilpembelajaran{
+      background-color: #e74c3c;
+    }
+    #wrapper-pengembang /* pengembang */ {
+      background-color: #2ecc71;
+    }
+  }
+
+  .tujuanpembelajaran2 {
+    margin: 0em 8em 4em 6em;
+    display: flex;
+    flex-direction: column;
+    list-style-type: circle;
+  }
+
+  .tujuanpembelajaran2 li:nth-child(1){
+    margin-top: 0px;
+  }
+
+  .tujuanpembelajaran2 li{
+    /* height: 40px; */
+    margin-top: 15px;
+  }
+
+  .tujuanpembelajaran2 li h1{
+    color: rgb(0, 0, 0);
+    font-family: "Sora", sans-serif;
+    font-size: 20px;
+  }
+
+
+  .tujuanpembelajaran2 h1{
+    color: rgb(0, 0, 0);
+    font-family: "Sora", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .tujuanpembelajaran2 h3{
+    color: rgb(0, 0, 0);
+    font-family: "Sora", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .tujuanpembelajaran2 .buttonprev{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .tujuanpembelajaran2 .buttonprev a{
+
+    background-color: #c8db3c;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tujuanpembelajaran2 .buttonprev a h1{
+    color: #fff;
+  }
+
+  /** akhir tujuan pembelajaran 2**/
+
+  .tujuanpembelajaran{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tujuanpembelajaran li:nth-child(1){
+    margin-top: 0px;
+  }
+
+  .tujuanpembelajaran li{
+    /* height: 40px; */
+    margin-top: 15px;
+  }
+
+  .tujuanpembelajaran li h1{
+    color: rgb(0, 0, 0);
+    font-family: "Sora", sans-serif;
+    font-size: 20px;
+  }
+
+
+  .tujuanpembelajaran h1{
+    color: rgb(0, 0, 0);
+    font-family: "Sora", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .tujuanpembelajaran h3{
+    color: rgb(0, 0, 0);
+    font-family: "Sora", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+
+  .wrapperbutton{
+    display: flex;
+  }
+
+  .tujuanpembelajaran .buttonprev{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .tujuanpembelajaran .buttonprev a{
+
+    background-color: #c8db3c;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tujuanpembelajaran .buttonprev a h1{
+    color: #fff;
+  }
+
+  .tujuanpembelajaran .buttonnext{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .tujuanpembelajaran .buttonnext a{
+
+    background-color: #57b8eb;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tujuanpembelajaran .buttonnext a h1{
+    color: #fff;
+  }
+
+  .tujuanpembelajaran .buttonnext2{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .tujuanpembelajaran .buttonnext2 a{
+
+    background-color: #57cdeb;
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tujuanpembelajaran .buttonnext2 a h1{
+    color: #fff;
+  }
+
+  
+
+  .tujuanpembelajaran{
+    margin: 0em 1em 4em 1em;
+  }
+
+  .tujuanpembelajaran .gambartengah{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 200px;
+    width: 200px;
+  }
+
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .container img{
+    /* height: 300px; */
+    width: 300px;
+  }
+
+  .container h1{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .container ul{
+    margin-top: 10px;
+  }
+
+  .container ul li{
+    margin-top: 10px;
+    /* width: 400px; */
+  }
+
+  .container ul li input{
+    width: 250px;
+    height: 30px
+  }
+
+  .container ul li a{
+    color: #57b8eb;
+  }
+
+  .gambarlatihan{
+    height: 100px;
+    width: 120px;
+  }
+
+  .kotakpenjelasan {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .kotakpenjelasan .item {
+    background-color: #93ffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 3%;
+  }
+
+  .kotakpenjelasan .item a{
+    text-decoration: none;
+    color: #333;
+  }
+
+  .videowrapper{
+    max-width: 1060px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  .videowrapper iframe{
+    width: 600px;
+  }
+
+  .bagi2{
+    display: flex;
+  }
+
+  .bagi2 img{
+    width: 400px;
+    height: 400px;
+    margin-right: 10px;
+  }
+
+  .gambarpenuh{
+    display: flex;
+    justify-content: center;
+  }
+
+  .gambarpenuh .gambartujuan{
+    width: 300px;
+  }
+  
+  /* ---------------- Start Responsive ---------------- */
+  @media only screen and (max-width: 600px) {
+    @media screen /* isi */ {
+      .isi {
+        margin: 1em 0 4em 0;
+      }
+      .wrapper {
+        width: 90%;
+        margin: 0.3em auto;
+      }
+    }
+    @media screen /* navbar */ {
+      .hamburger {
+        display: none;
+      }
+      .wrappernavbar {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        box-shadow: 0 0 20px #00000022;
+      }
+      .navbar {
+        width: 80%;
+        height: 41px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        flex-wrap: nowrap;
+      }
+      .navbar ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        margin-right: 40px;
+      }
+      .navbar ul a {
+        display: inline-block;
+        height: 35px;
+        width: 35px;
+        text-align: center;
+        justify-content: center;
+      }
+      .navbar p {
+        display: none;
+      }
+    }
+    @media screen /* header */ {
+      .wrapperheader {
+        height: 125px;
+        width: 100%;
+        /* background-color: coral; */
+        box-shadow: 0 0 20px #00000022;
+      }
+      .wrapperheader .salam {
+        width: 60px;
+        height: 60px;
+        display: grid;
+        place-content: center;
+        margin-left: 2em;
+      }
+      .salam h1 {
+        font-family: "Sora", sans-serif;
+        font-size: 20px;
+        width: 40px;
+      }
+      .salam h1 span {
+        font-family: "Sora", sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        margin-top: -20px;
+        margin-left: -50px;
+      }
+      .photoprofile {
+        width: 80px;
+        height: 60px;
+      }
+    }
+
+    .tujuanpembelajaran{
+      margin: 1em 1em 4em 1em;
+    }
+
+    .tujuanpembelajaran h1{
+      color: rgb(0, 0, 0);
+      font-family: "Sora", sans-serif;
+      font-size: 1em;
+      font-weight: 800;
+    }
+  
+    .tujuanpembelajaran h3{
+      color: rgb(0, 0, 0);
+      font-family: "Sora", sans-serif;
+      font-size: 1em;
+      font-weight: 400;
+    }
+
+    .tujuanpembelajaran .buttonnext{
+      display: flex;
+      justify-items: center;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .wrapperjudul{
+      height: 100px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      place-content: center;
+    }
+    .wrapperjudul .judul{
+      width: 500px;
+      height: 60px;
+      margin-left: 1em;
+      text-align: center;
+    }
+
+    .wrapperjudul .judul .isijudul{
+      font-family: "Sora", sans-serif;
+      font-size: 20px;
+      font-weight: 900;
+    }
+
+
+    .videowrapper{
+      max-width: 400px;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+    }
+  
+    .videowrapper iframe{
+      width: 350px;
+      height: 200px;
+    }
+
+    .bagi2{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .bagi2 img{
+      width: 200px;
+      height: 200px;
+      margin-right: 10px;
+    }
+
+    .logout a {
+      font-family: "Sora", sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      margin-left: 40px;
+      display: block;
+      color: red;
+  }
+
+  }
+  /* ---------------- End of Responsive --------------- */
+  
+  
